@@ -1,17 +1,138 @@
-# resiclima-pres
+# resiclima-pres-1
 
 <!-- badges: start -->
 [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
-[![License:
-MIT](https://img.shields.io/badge/license-MIT-green)](https://choosealicense.com/licenses/mit/)
-[![License: CC BY
-4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: GPLv3](https://img.shields.io/badge/license-GPLv3-bd0000.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 <!-- badges: end -->
 
-🌍🌀🌱🧑‍🤝‍🧑🔗🕸️🧩📊🕹️🤖🔄🧠🌡️🌊🌿🔬🔎🔓
+## Overview
 
-This repository contains the slides from the presentation _Exploring complexity with agent-based models_, presented at the [REDE RESICLIMA](https://resiclima.com.br/)'s _First Meeting of Multidisciplinary Perspectives on Climate Change_ in Recife, Brazil, held from August 12-17, 2024. The slides are available [here](https://danielvartan.github.io/resiclima-pres/).
+This repository contains the slides from the presentation _Exploring complexity with agent-based models_, delivered on August 15, 2024, at the [1st Meeting on Multidisciplinary Perspectives on Climate Change](https://resiclima.com.br/15/10/2025/recife-recebe-encontro-multidisciplinar-sobre-mudancas-climaticas/) organized by the [Resiclima Network](https://resiclima.com.br).
 
-The code related to this repository is released under the [MIT
-license](https://opensource.org/license/mit/). Documents are released under the [Creative Commons Attribution 4.0 International
-license](https://creativecommons.org/licenses/by/4.0/).
+The slides are available [here](https://danielvartan.github.io/resiclima-pres-2/).
+
+A recording of the presentation, recorded on October 10, 2024, is available [here](https://youtu.be/WPkbsb4eCFE).
+
+## Usage
+
+This presentation was created using the [Quarto](https://quarto.org/) publishing system and the [R](https://www.r-project.org/) programming language. To build the slides locally, you will need to have these tools installed on your computer.
+
+The [`renv`](https://rstudio.github.io/renv/) R package is used to manage the R package dependencies. To install the required packages, run the following commands in your R console before rendering the slides:
+
+```r
+# install.packages("renv")
+renv::restore()
+```
+
+After installing the dependencies, you can render the slides by executing the following command at the project root directory in your terminal:
+
+```bash
+quarto render
+```
+
+This will generate the slides in the `docs` directory.
+
+## Citation
+
+To cite this work, please use the following format:
+
+Vartanian, D. (2025). *Exploring complexity with agent-based models* \[Presentation\].
+<https://danielvartan.github.io/resiclima-pres-1>
+
+A BibLaTeX entry for LaTeX users is:
+
+``` latex
+@online{vartanian2025,
+  title = {Exploring complexity with agent-based models},
+  author = {{Daniel Vartanian}},
+  year = {2025},
+  url = {https://danielvartan.github.io/resiclima-pres-1},
+  langid = {en},
+  note = {Presentation}
+}
+```
+
+## License
+
+[![License: GPLv3](https://img.shields.io/badge/license-GPLv3-bd0000.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+The code in this repository is licensed under the [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0), while the presentation is available under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+``` text
+Copyright (C) 2025 Daniel Vartanian
+
+The code in this repository is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <https://www.gnu.org/licenses/>.
+```
+
+## Acknowledgments
+
+<table>
+  <tr>
+    <td width="30%">
+      <br/>
+      <br/>
+      <p align="center">
+        <a href="https://www.fsp.usp.br/sustentarea/">
+          <img src="images/sustentarea-logo.svg" width="125"/>
+        </a>
+      </p>
+      <br/>
+    </td>
+    <td width="70%">
+      <p>
+        This work was developed with support from the
+        <a href="https://www.fsp.usp.br/sustentarea/">Sustentarea</a>
+        Research and Extension Center at the University of São Paulo (<a href="https://www5.usp.br/">USP</a>).
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="30%">
+      <br/>
+      <br/>
+      <p align="center">
+        <a href="https://www.fsp.usp.br/sustentarea/">
+          <img src="images/resiclima-logo.svg" width="125"/>
+        </a>
+      </p>
+      <br/>
+    </td>
+    <td width="70%">
+      <p>
+        This work was developed with support from the
+        <a href="https://resiclima.com.br/">Resiclima Network</a>,
+        an international collaboration for the multidimensional and interdisciplinary study of global climate change.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="30%"">
+      <br>
+      <p align="center">
+        <br> <a href="https://www.gov.br/cnpq/"><img src="images/cnpq-logo.svg" width="150em"/></a>
+      </p>
+      <br>
+    </td>
+    <td width="70%">
+      This work was supported by the Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brazil (<a href="https://www.gov.br/cnpq/">CNPq</a>). Process number 384050/2024-7 and 383346/2025-8.
+    </td>
+  </tr>
+</table>
